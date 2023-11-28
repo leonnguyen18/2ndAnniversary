@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="shortcut icon" href="pictures/NetflixIcon.png">
+    <title>Netflix CL</title>
+    <style>
+        #scroll::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <main style="font-family: 'Montserrat';" class="text-gray-100">
+    <!-- HEADER -->
+    <header class="w-full bg-black py-4 px-8 flex justify-between items-center fixed">
+        <!-- LEFT -->
+        <div>
+            <a href="index.html">
+                <iconify-icon class="text-3xl cursor-pointer flex" icon="ic:outline-log-out" style="color: #f9fafb;" rotate="180deg"></iconify-icon>
+            </a>
+        </div>
+        <div class="flex items-center">
+            <!-- LOGO -->
+        <div>
+            <img src="pictures/NetflixCL.png" class="w-36" alt="">
+        </div>
+            <ul class="list-none hidden font-medium lg:flex pl-10 gap-14">
+                <li class="cursor-pointer">TV Shows</li>
+                <li class="cursor-pointer">Movies</li>
+                <li class="cursor-pointer">Recently Added</li>
+                <li class="cursor-pointer">My List</li>
+            </ul>
+        </div>
+        <!-- RIGHT -->
+        <div class="flex gap-8 items-center">
+            <iconify-icon icon="akar-icons:search" class="text-[26px] cursor-pointer" style="color: #f9fafb;"></iconify-icon>
+            <img src="pictures/mark.jpg" class="w-[27px] hidden rounded-sm cursor-pointer" alt="">
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="w-full pb-10 pl-5 pt-24 bg-black text-gray-200">
+
+        <!-- First Month -->
+        <div class="pb-9">
+            <h1 class="text-[20px] pl-2 pb-2 font-bold">Những ngày đầu tiên quen nhau</h1>
+            <div class="flex gap-3 overflow-auto whitespace-nowrap" id="scroll">
+                <a href="MONTHSARY/1st Monthsary/firstcake.html" class="flex shrink-0"><img src="MONTHSARY/1st Monthsary/THUMBNAIL/FIRST CAKE.jpeg" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/1st Monthsary/laughing.html" class="flex shrink-0"><img src="MONTHSARY/1st Monthsary/THUMBNAIL/LAUGHING.jpeg" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/1st Monthsary/sayahhh.html" class="flex shrink-0"><img src="MONTHSARY/1st Monthsary/THUMBNAIL/SAY AHH.jpeg" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/1st Monthsary/stare.html" class="flex shrink-0"><img src="MONTHSARY/1st Monthsary/THUMBNAIL/STARE.JPG" class="w-44 mr-5 cursor-pointer rounded-md" alt=""></a>
+            </div>
+        </div>
+        <!-- Second Month -->
+        <div class="pb-9">
+            <h1 class="text-[20px] pl-2 pb-2 font-bold">Kỉ niệm qua từng tháng</h1>
+            <div class="flex gap-3 overflow-auto whitespace-nowrap" id="scroll">
+                <a href="MONTHSARY/2nd Monthsary/secondcake.html" class="flex shrink-0"><img src="MONTHSARY/2nd Monthsary/THUMBNAILS/SECOND CAKE.JPG" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/2nd Monthsary/feed.html" class="flex shrink-0"><img src="MONTHSARY/2nd Monthsary/THUMBNAILS/FEED.png" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/2nd Monthsary/swolen.html" class="flex shrink-0"><img src="MONTHSARY/2nd Monthsary/THUMBNAILS/SWOLLEN EYES.png" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/2nd Monthsary/tasteit.html" class="flex shrink-0"><img src="MONTHSARY/2nd Monthsary/THUMBNAILS/TASTE IT.png" class="w-44 mr-5 cursor-pointer rounded-md" alt=""></a>
+            </div>
+        </div>
+        <!-- Third Month -->
+        <div class="pb-9">
+            <h1 class="text-[20px] pl-2 pb-2 font-bold">Kỉ niệm 100 ngày</h1>
+            <div class="flex gap-3 overflow-auto whitespace-nowrap" id="scroll">
+                <a href="MONTHSARY/3rd Monthsary/lilbrotito.html" class="flex shrink-0"><img src="MONTHSARY/3rd Monthsary/THUMBNAIL/LILBROTITO.png" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/3rd Monthsary/soon.html" class="flex shrink-0"><img src="MONTHSARY/3rd Monthsary/THUMBNAIL/SOON TO BE MEXICAN.png" class="w-44 mr-5 cursor-pointer rounded-md" alt=""></a>
+            </div>
+        </div>
+        <!-- Fourth Month -->
+        <div class="pb-9">
+            <h1 class="text-[20px] pl-2 pb-2 font-bold">On Nhớ Vợ quá trời quá đất</h1>
+            <div class="flex gap-3 overflow-auto whitespace-nowrap" id="scroll">
+                <a href="MONTHSARY/4th Monthsary/valentine.html" class="flex shrink-0"><img src="MONTHSARY/4th Monthsary/THUMBNAIL/VALENTINE GIFTS.png" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/4th Monthsary/website.html" class="flex shrink-0"><img src="MONTHSARY/4th Monthsary/THUMBNAIL/WEBSITE GIFT.png" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/4th Monthsary/first.html" class="flex shrink-0"><img src="MONTHSARY/4th Monthsary/THUMBNAIL/FIRST.png" class="w-44 mr-5 cursor-pointer rounded-md" alt=""></a>
+            </div>
+        </div>
+         <!-- Fifth Month -->
+         <div class="pb-9">
+            <h1 class="text-[20px] pl-2 pb-2 font-bold">Những kỉ niệm khó quên</h1>
+            <div class="flex gap-3 overflow-auto whitespace-nowrap" id="scroll">
+                <a href="MONTHSARY/5th Monthsary/give.html" class="flex shrink-0"><img src="MONTHSARY/5th Monthsary/THUMBNAIL/GIVE ME SOME TICKET.png" class="w-44 cursor-pointer rounded-md" alt=""></a>
+                <a href="MONTHSARY/5th Monthsary/tripod.html" class="flex shrink-0"><img src="MONTHSARY/5th Monthsary/THUMBNAIL/TRIPOD.png" class="w-44 mr-5 cursor-pointer rounded-md" alt=""></a>
+            </div>
+        </div>
+        <!-- Sixth Month -->
+        <div class="pb-9">
+            <h1 class="text-[20px] pl-2 pb-2 font-bold">Món quà ngày hôm nay</h1>
+            <div class="flex gap-3 overflow-auto whitespace-nowrap" id="scroll">
+                <a href="MONTHSARY/6th Monthsary/swoosh.html" class="flex shrink-0"><img src="MONTHSARY/6th Monthsary/THUMBNAIL/SWOOOSH.png" class="w-44 cursor-pointer rounded-md" alt=""></a>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+   </main>
+
+   <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charseLOt="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="shortcut icon" href="pictures/NetflixIcon.png">
+    <title>Netflix On Bi</title>
+</head>
+<body>
+    <main  style="font-family: 'Roboto';" class="bg-black flex flex-col w-full h-[100vh] text-gray-50">
+        <header class="flex items-center justify-between py-6 px-7">
+            <!-- LEFT SIDE -->
+            <div>
+                <img class="w-32" src="pictures/NetflixCL.png" alt="">
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="flex gap-2">
+                <button class="border-[1px] border-[#7b7b7b] py-[3px] rounded-[4px] flex items-center"><iconify-icon icon="ph:globe" style="color: white;" flip="horizontal" class=" text-lg pb-[2px] pr-2 sm:pr-0 pl-3 "></iconify-icon><p class="text-[15.5px]  hidden sm:block pr-3 pl-2">English</p><iconify-icon icon="bxs:up-arrow" style="color: white;" rotate="180deg" flip="horizontal" class="text-[9px] pr-4 "></iconify-icon></button>
+                <button id="signIn" class="bg-red-700 py-[6.5px] rounded-[4px] px-4 font-medium text-sm">Sign In</button>
+            </div>
+        </header>
+
+        <!-- CONTENT PART -->
+        <div class="flex w-full h-full justify-center items-center pb-24">
+            <div class="items-center">
+                <h1 class="text-4xl px-3 text-center font-bold">Happy 2 years Bé yêu của On </h1>
+                <p class="text-center py-5">Tất cả những kỉ niệm trong 2 năm vừa rồi.</p>
+                <p class="text-center text-lg px-5 pb-4">Em đã sẵn sàng để xem chưa? Hãy nhập ngày kỉ niệm của mình để xem.</p>
+                <form id="form" autocomplete="off" class="flex justify-center relative flex-col gap-5 px-10">
+                    <input id="date" type="text" spellcheck="false" type="submit" placeholder="Enter the exact date" class="placeholder:text-[#a2a2a2] pl-4 py-3 bg-transparent rounded-[4px] border-[#7b7b7b] border-[1px] w-full">
+                    <button id="button" class="bg-red-700 font-medium rounded-[4px] py-3 px-5 mr-1 self-center text-xl flex items-center">Get Started <iconify-icon icon="ep:arrow-up-bold" style="color: white;" rotate="90deg" flip="horizontal"></iconify-icon></button>
+                    <div id="msg" class="text-red-500 absolute -bottom-10 text-center"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

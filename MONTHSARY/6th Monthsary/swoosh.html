@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="shortcut icon" href="../../pictures/NetflixIcon.png">
+    <title>Món quà dành tặng Bi ngày kỉ niệm hôm nay</title>
+    <style>
+        #scroll::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <main style="font-family: 'Montserrat';" class="text-gray-100">
+
+        <header class="w-full bg-transparent py-4 px-7 z-10 flex justify-between items-center fixed">
+            <!-- LEFT -->
+            <div class="flex">
+                <a href="../../main.html"><iconify-icon class="text-4xl flex cursor-pointer" icon="ep:back" style="color: #f9fafb;"></iconify-icon></a>
+            </div>
+            <!-- MIDDLE -->
+            <div class="flex">
+                <img src="../../pictures/NetflixCL.png" class="w-36" alt="">
+            </div>
+            <!-- RIGHT -->
+            <div class="flex">
+                <iconify-icon class="text-3xl cursor-pointer" icon="mdi:heart-outline" style="color: #f9fafb;"></iconify-icon>            
+            </div>
+        </header>
+
+        <!-- THUMBNAIL -->
+        <div class="relative w-full">
+
+            <!-- IMAGE -->
+            <div class="bg-gradient-to-b from-stone-500 to-black">
+                <img src="../6th Monthsary/THUMBNAIL/SWOOOSH.png" class="w-full brightness-90 mix-blend-overlay" alt="">
+            </div>
+            <!-- IMAGE -->
+
+            <div class="absolute bottom-0 pb-7 pl-6">
+
+                <!-- TITLE -->
+                <h1 class="text-4xl font-bold ">Quà của Bi</h1>
+                <div class="flex gap-2 pt-3 pb-2">
+                    <p class="bg-slate-300 bg-opacity-50 px-4 rounded-xl text-sm">love</p>
+                    <p class="bg-slate-300 bg-opacity-50 px-4 rounded-xl text-sm">funny</p>
+                </div>
+                <!-- TITLE -->
+
+                <p class="text-sm font-light pb-1">28 11 2023</p>
+                <div class="flex gap-1">
+                    <iconify-icon class="text-xl" icon="material-symbols:star" style="color: #ff2a00;"></iconify-icon>
+                    <iconify-icon class="text-xl" icon="material-symbols:star" style="color: #ff2a00;"></iconify-icon>
+                    <iconify-icon class="text-xl" icon="material-symbols:star" style="color: #ff2a00;"></iconify-icon>
+                    <iconify-icon class="text-xl" icon="material-symbols:star" style="color: #ff2a00;"></iconify-icon>
+                    <iconify-icon class="text-xl" icon="material-symbols:star" style="color: #ff2a00;"></iconify-icon>
+                </div>
+                
+            </div>
+            <div class="absolute cursor-pointer -bottom-7 drop-shadow-2xl right-14">
+                <iconify-icon onclick="playVideo()" class="text-3xl hover:bg-red-700 duration-300 bg-red-600 p-4 rounded-full" icon="ph:play-fill" style="color: #ffff;"></iconify-icon>
+            </div>
+        </div>
+        
+        
+
+    </main>
+
+    <!-- VIDEO PLAYER -->
+    <div id="videoPlayer" class="hidden">
+        <div
+          class="absolute top-0 left-0 w-full h-full flex justify-center items-center"
+        >
+          <div
+            class="bg-black  w-full h-full z-20 flex justify-center items-center relative"
+          >
+           
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8rI_LIFv0MA?si=PU_pg2zeC3ELDSDz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="absolute top-3 right-3">
+
+              <a href="swoosh.html"><svg
+                onclick="stopVideo()"
+                class="cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="45"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#ff2e2e"
+                  d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                />
+              </svg></a>
+              
+            </div>
+          </div>
+      </div>
+        <script src="../../videoPlayer.js"></script>
+
+</body>
+</html>
